@@ -228,7 +228,7 @@ import random
 if __name__ == "__main__":
 
     G = nx.MultiDiGraph()
-    with open(r'H:\PyCharm 2023.1.4\pycharm1\Subgraph_sample_and_static\15k237-data\train.txt', 'r') as f:
+    with open('.\train.txt', 'r') as f:
         for line in f:
             h, r, t = line.strip().split('\t')
             G.add_edge(h, t, relation=r)
